@@ -55,6 +55,11 @@ main .postingForm {
   background-position: right 14px center;
 }
 
+.postingSelectBtn.on+.postingTimeList {
+  display: block;
+  
+}
+
 .postingTimeSelect .postingTimeList {
   display: none;
   margin-top: 5px;
@@ -64,6 +69,7 @@ main .postingForm {
 }
 
 .postingTimeSelect .postingTimeList .textEllipsis {
+  display: block;
   margin: 13px;
   white-space: nowrap;
   overflow: hidden;

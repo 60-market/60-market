@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="shortcut icon" href="/asset/images/favicon.ico" />
     <link rel="stylesheet" href="../css/styles.css" />
+    <script src="../script/posting.js" defer></script>
     <title>60'' Market | 게시물 작성</title>
   </head>
   <body>
@@ -18,7 +19,7 @@
           onclick="history.back()"
         />
         <button type="button" class="headerBarSettingBtn headerBarBtn buttonClick">
-          저장
+          업로드
         </button>
       </article>
     </header>
@@ -36,7 +37,13 @@
         <!-- 상품명 등록 -->
         <form class="postingForm" action="" method="get">
           <label class="postingFormLabel" for="product">상품명</label>
-          <input id="product" type="text" required placeholder="2~15자 이내여야 합니다." />
+          <input id="product" 
+          type="text" 
+          minlength="2" 
+          maxlength="15" 
+          required 
+          placeholder="2~15자 이내여야 합니다." 
+          />
         </form>
 
         <!-- 가격 등록 -->
@@ -53,7 +60,7 @@
         <!-- 시간 선택 -->
         <div class="postingForm">
           <h3 class="postingFormLabel">시간 선택</h3>
-          <article class="postingTimeSelect">
+          <div class="postingTimeSelect">
             <h2 class="ir">시간을 선택해주세요</h2>
             <button type="button" class="postingSelectBtn">
               시간을 선택해주세요.
@@ -62,7 +69,8 @@
               <li>
                 <button type="button" class="textEllipsis">10분 이하</button>
               </li>
-              <li><button type="button" class="textEllipsis">30분</button></li>
+              <li>
+                <button type="button" class="textEllipsis">30분</button></li>
               <li>
                 <button type="button" class="textEllipsis">1시간</button>
               </li>
@@ -76,8 +84,7 @@
                 <button type="button" class="textEllipsis">나눔</button>
               </li>
             </ul>
-          </article>
-        </div>
+          </div>
 
         <!-- 내용 입력 -->
         <form class="postingForm" action="">
@@ -94,3 +101,4 @@
     </div>
   </body>
 </html>
+
