@@ -57,7 +57,6 @@ main .postingForm {
 
 .postingSelectBtn.on+.postingTimeList {
   display: block;
-  
 }
 
 .postingTimeSelect .postingTimeList {
