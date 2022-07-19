@@ -30,7 +30,6 @@ main .registerForm #password:focus {
 }
 
 main .registerForm .registerFormAlert {
-  display: none;
   align-self: flex-start;
   color: orangered;
   font-size: 13px;
