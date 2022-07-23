@@ -5,8 +5,7 @@ main .post {
 .post .moreBtn {
   width: 20px;
   height: 20px;
-  background: url("../../asset/images/icons/icon__menu.svg") no-repeat center /
-    20px 20px;
+  background: url("../../asset/images/icons/icon__menu.svg") no-repeat center / 20px 20px;
 }
 
 .post .postContent {
@@ -47,14 +46,8 @@ main .post {
   content: "";
   width: 20px;
   height: 20px;
-  background: url("../../asset/images/icons/icon__heart.svg") no-repeat center /
-    20px 20px;
+  background: url("../../asset/images/icons/icon__heart.svg") no-repeat center / 20px 20px;
   margin-right: 6px;
-}
-
-.postBtnContent .likeBtn.on::before {
-  background: url("../../asset/images/icons/icon__heartSelected.svg") no-repeat
-    center / 20px 20px;
 }
 
 .postBtnContent .commentBtn {
@@ -69,8 +62,7 @@ main .post {
   content: "";
   width: 20px;
   height: 20px;
-  background: url("../../asset/images/icons/icon__message.svg") no-repeat center /
-    20px 20px;
+  background: url("../../asset/images/icons/icon__message.svg") no-repeat center / 20px 20px;
   margin-right: 6px;
 }
 

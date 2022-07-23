@@ -1,5 +1,10 @@
-const token = localStorage.getItem("Token");
-const postAccountName = localStorage.getItem("accountname");
+//로그인 구현시 삭제
+const token = "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjYyYjNmOGUxNTM2MWFhZWE1NjlhYWUzOCIsImV4cCI6MTY2MTE0NTgyNywiaWF0IjoxNjU1OTYxODI3fQ.F7JLkiPLzbW3GcLUK_b_-h4_7zkZdLQgTZB-OddOhLY";
+
+// localStorage.getItem("token");
+// const postAccountName = "ayden123";
+const postAccountName = "ujin16";
+// localStorage.getItem("accountname");
 
 let state = "list";
 const curUrl = location.href;
@@ -181,9 +186,7 @@ function getFeed(posts, state) {
                   class="userProfileImage"
                 />
                 <div class="userInfo">
-                  <strong class="userNickname">${
-                    element.author.username
-                  }</strong>
+                  <strong class="userNickname">${element.author.username}</strong>
                   <div class="userText">
                     <p class="userMsgContent userStatusMsg">
                       @${element.author.accountname}
@@ -231,9 +234,7 @@ function timeForToday(value) {
   const today = new Date();
   const timeValue = new Date(value);
 
-  const betweenTime = Math.floor(
-    (today.getTime() - timeValue.getTime()) / 1000 / 60
-  );
+  const betweenTime = Math.floor((today.getTime() - timeValue.getTime()) / 1000 / 60);
   if (betweenTime < 1) return "방금전";
   if (betweenTime < 60) {
     return `${betweenTime}분전`;
