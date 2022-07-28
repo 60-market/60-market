@@ -43,8 +43,13 @@ getLoginUserInfo();
 function readInputFile(e) {
   const files = e.target.files;
   const fileArr = [...files];
+  if (e.target.files[0].size > 10000000) {
+    alert("이미지 사이즈는 10MB 이내로 등록 가능합니다.");
+    return;
+  } 
   fileArr.forEach((file) => imgFiles.push(file));
   fileArr.forEach(function (i) {
+    
     if (files.length <= 3) {
       const reader = new FileReader();
       reader.onload = function (e) {
@@ -88,7 +93,6 @@ async function uploadImg(event) {
     data.forEach((data) => {
       arrImg.push(`${url}/${data.filename}`);
     });
-
     return arrImg;
   } catch (err) {
     alert("이미지 파일은 최대 3장까지만 가능합니다.");
