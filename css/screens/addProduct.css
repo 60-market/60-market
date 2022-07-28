@@ -1,12 +1,10 @@
-.addProduct {
-  padding: 70px;
-  display: flex;
+main .addProduct {
   flex-direction: column;
 }
 
 main .addProductForm {
-  width: 100%;
-  margin: 10px 0;
+  max-width: 390px;
+  margin: 0 auto;
   display: flex;
   flex-direction: column;
 }
@@ -50,6 +48,10 @@ main .addProductForm {
   background-color: var(—-borderColor);
 }
 
+.timeSelct{
+  width: 100%;
+}
+
 .addProductForm #addProductName:focus,
 .addProductForm #addProductName:active,
 .addProductForm #addProductPrice:focus,
@@ -80,8 +82,13 @@ main .addProductForm {
   border-radius: 10px;
 }
 
+.addProductTimeSelect .addProductTimeList li {
+  width: 100%;
+}
+
 .addProductTimeSelect .addProductTimeList .textEllipsis {
-  margin: 13px;
+  width: 100%;
+  margin-top: 10px;
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;

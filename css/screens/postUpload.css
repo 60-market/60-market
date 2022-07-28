@@ -38,6 +38,7 @@ body .postContainer{
 
 .postContainer .postUploadImageScreen {
     width: 100%;
+    object-fit: cover;
     height: 228px;
     margin: 16px auto 0;
     display: flex;
